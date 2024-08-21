@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccq6thepsnsh5"]
+
+[ext_resource type="Script" path="res://Scripts/cookie_area2D.gd" id="1_mgrxe"]
+[ext_resource type="Texture2D" uid="uid://cn1vcilt3lwjs" path="res://Sprites/Cookie.png" id="2_jswon"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fg3cc"]
+radius = 15.1327
+
+[node name="cookie_area2D" type="Area2D"]
+script = ExtResource("1_mgrxe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_fg3cc")
+
+[node name="cookie" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(6.46235e-27, -4.76837e-07)
+scale = Vector2(0.0243333, 0.0243333)
+texture = ExtResource("2_jswon")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1cmlvmjtm23a"]
+
+[ext_resource type="Texture2D" uid="uid://c0eqjyma2r01p" path="res://Sprites/balao.png" id="1_wevmi"]
+
+[node name="Final" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 264.0
+offset_top = 227.0
+offset_right = 908.0
+offset_bottom = 366.0
+theme_override_font_sizes/font_size = 50
+text = "Você conseguiu! Parabéns!"
+
+[node name="Balao" type="Sprite2D" parent="."]
+position = Vector2(132, 311)
+scale = Vector2(0.373351, 0.373351)
+texture = ExtResource("1_wevmi")
+
+[node name="Balao2" type="Sprite2D" parent="."]
+position = Vector2(1023, 301)
+scale = Vector2(0.373351, 0.373351)
+texture = ExtResource("1_wevmi")
